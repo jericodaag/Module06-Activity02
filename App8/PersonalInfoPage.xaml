@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App8.PersonalInfoPage">
+    <ContentPage.Content>
+        <StackLayout Margin="20" Spacing="15">
+            <Entry x:Name="FirstNameEntry" Placeholder="First Name" />
+            <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand" Spacing="10">
+                <Label Text="Middle Name" />
+                <Switch x:Name="MNameSwitch" />
+            </StackLayout>
+            <Entry x:Name="MiddleNameEntry" Placeholder="Middle Name" IsEnabled="{Binding IsToggled, Source={x:Reference MNameSwitch}}" />
+            <Entry x:Name="LastNameEntry" Placeholder="Last Name" />
+            <Picker Title="Gender" x:Name="GenderPicker">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Male</x:String>
+                        <x:String>Female</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+            <Label Text="Birthday" />
+            <DatePicker x:Name="BirthdatePicker" />
+            <Label x:Name="AgeLabel" />
+            <Entry x:Name="AddressEntry" Placeholder="Address" />
+            <Entry x:Name="ContactNumberEntry" Placeholder="Contact Number" Keyboard="Telephone" />
+            <Entry x:Name="EmailEntry" Placeholder="Email" Keyboard="Email" />
+            <Entry x:Name="UsernameEntry" Placeholder="Username" />
+            <Entry x:Name="PasswordEntry" Placeholder="Password" IsPassword="True" />
+            <Entry x:Name="RepeatPasswordEntry" Placeholder="Repeat Password" IsPassword="True" />
+            <Button Text="Submit" BackgroundColor="Blue" TextColor="White" x:Name="SubmitButton" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+    

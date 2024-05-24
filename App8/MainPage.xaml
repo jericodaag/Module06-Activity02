@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App8.MainPage" Title="Cristan Josh S. Nuguid">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="5" CornerRadius="0">
+        </Frame>
+        <Label Text="Module 5 Exercise 1" FontSize="Title" Padding="30,10,30,10"/>
+        <Label FontSize="16" Padding="30,24,30,0">
+        </Label>
+
+        <Button Text="My Personal Info" Clicked="PersonalInfoPage1"/>
+
+    </StackLayout>
+
+</ContentPage>
